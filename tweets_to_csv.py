@@ -155,6 +155,6 @@ df_final = df_final.drop_duplicates(subset='Contact', keep="last")
 from google.colab import drive
 drive.mount('drive')
 
-df_withContact.to_csv('data.csv')
+df_final.to_csv('data.csv')
 !cp data.csv "drive/My Drive/"
 
