@@ -106,7 +106,6 @@ for item in city_names:
   item = item.replace(' ','')
   item = item.replace('\'','')
 
-# df_clean = df_tweets[df_tweets.text.str.contains("help")]
 df_clean = df_tweets[df_tweets["location"].str.contains("pakistan")==False]
 df_withLoc = get_loc(df_clean, city_names)
 
@@ -135,30 +134,4 @@ drive.mount('drive')
 
 df_withContact.to_csv('data.csv')
 !cp data.csv "drive/My Drive/"
-
-
-
-#https://python.plainenglish.io/scraping-tweets-with-tweepy-python-59413046e788
-#https://developer.twitter.com/en/portal/products
-#https://developer.twitter.com/en/portal/projects/1385380996925771779/apps/20665896/keys
-#https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/quick-start
-#https://regex101.com/r/6Hm8PD/2/codegen?language=python
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
