@@ -47,11 +47,15 @@ import os
 import time
 from fuzzywuzzy import process
 
-consumer_key = 'TAbe8vlVr0J0685E1k9CfkohO'
-consumer_secret = 'JPdOEnGct8b2mfzggUGxjpOjq7RwsmufdfjRYN2Fu8IjgtbPpL'
-access_key = '1189932019243003904-wbuBYzIzY2LxEC0kqw6MKRVzDo6Uol'
-access_secret = 'OLlvCXRBYgirwESgKfpbCLdkYMc92ev6BOIw6F7pfODLU'
-# Pass your twitter credentials to tweepy via its OAuthHandler
+# Please Enter your twitter credentials here to run the code
+# You may obtain twitter credentials from Twitter Developer's Account 
+
+
+consumer_key = ''
+consumer_secret = ''
+access_key = ''
+access_secret = ''
+# Authentication
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
 api = tweepy.API(auth)
